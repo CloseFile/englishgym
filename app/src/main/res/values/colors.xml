@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2797C7</color>
+    <color name="colorPrimaryDark">#2797C7</color>
+    <color name="colorAccent">#2797C7</color>
+    <color name="colorAccentSecondary">#24C2CC</color>
+
+    <color name="primaryTransparent">#802797C7</color>
+
+    <color name="background">#F5F5F5</color>
+    <color name="white">#FFF</color>
+    <color name="red">#FF7979</color>
+    <color name="yellow">#FFC700</color>
+</resources>

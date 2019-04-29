@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">English Gym</string>
+
+    <string name="title_learn">Learn</string>
+    <string name="title_stories">Stories</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="title_activity_statistics">Statistics</string>
+    <string name="level">Level 0</string>
+    <string name="title_activity_tab">ActivityTab</string>
+    <string name="tab_today">Today</string>
+    <string name="tab_total">Total</string>
+</resources>
