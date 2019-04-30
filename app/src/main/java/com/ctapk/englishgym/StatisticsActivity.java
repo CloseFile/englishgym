@@ -2,16 +2,12 @@ package com.ctapk.englishgym;
 
 import android.os.Bundle;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.annotation.NonNull;
-import androidx.viewpager.widget.ViewPager;
 
 import android.view.Gravity;
-import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,10 +41,11 @@ public class StatisticsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_statistics);
 
         setAppBarTitle(R.string.title_activity_statistics);
-
+        setDayWeekIcons();
+        setTodayValues();
 //        BottomNavigationView navView = findViewById(R.id.bottom_nav);
 //        mTextMessage = findViewById(R.id.message);
 //        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -65,8 +62,10 @@ public class StatisticsActivity extends AppCompatActivity {
             // и просто менять видимость
             public void onTabSelected(TabLayout.Tab tab) {
                 if (tabLayout.getSelectedTabPosition() == 0) {
+                    setTodayValues();
                     Toast.makeText(StatisticsActivity.this, "Tab " + tabLayout.getSelectedTabPosition(), Toast.LENGTH_LONG).show();
                 } else {
+                    setTotalValues();
                     Toast.makeText(StatisticsActivity.this, "Tab " + tabLayout.getSelectedTabPosition(), Toast.LENGTH_LONG).show();
                 }
             }
@@ -76,6 +75,15 @@ public class StatisticsActivity extends AppCompatActivity {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {}
         });
+    }
+
+    private void setDayWeekIcons() {
+    }
+
+    private void setTotalValues() {
+    }
+
+    private void setTodayValues() {
     }
 
     public void setAppBarTitle(int title) {

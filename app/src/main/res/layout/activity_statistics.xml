@@ -41,12 +41,16 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/grid_margin"
+        android:layout_marginBottom="@dimen/margin_mini"
         android:adjustViewBounds="true"
         android:src="@drawable/image_group"
         app:layout_constraintBottom_toTopOf="@+id/title_week_tv"
         app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
 
     <TextView
         android:id="@+id/level_tv"
@@ -79,6 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="11/20 stories"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/guideline_vertical"
         app:layout_constraintTop_toBottomOf="@id/progress_bar" />
 
@@ -88,8 +93,10 @@
 
     <TextView
         android:id="@+id/title_week_tv"
+        style="@style/AppTheme.WhiteText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/grid_margin"
         android:layout_marginBottom="55dp"
         android:text="Last week activity"
         app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal"
@@ -118,19 +125,24 @@
 
     <include
         android:id="@+id/num_stories_card"
-        layout="@layout/settings_card_layout"
+        layout="@layout/statistics_card_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="8dp"
+        android:layout_marginTop="@dimen/card_top_margin"
+        android:layout_marginLeft="@dimen/grid_margin"
+        android:layout_marginRight="@dimen/grid_margin"
         app:layout_constraintBottom_toTopOf="@id/spend_time_card"
         app:layout_constraintTop_toBottomOf="@id/sliding_tabs" />
 
     <include
         android:id="@+id/spend_time_card"
-        layout="@layout/settings_card_layout"
+        layout="@layout/statistics_card_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="8dp"
+        android:layout_marginTop="@dimen/card_top_margin"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/grid_margin"
+        android:layout_marginRight="@dimen/grid_margin"
         app:layout_constraintBottom_toTopOf="@id/bottom_nav"
         app:layout_constraintTop_toBottomOf="@id/num_stories_card" />
 
